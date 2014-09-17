@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="nuSWE">
+
+<!--base href="' + document.location + '" />');</script-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>NU SWE | Society of Women Engineers at Northwestern University</title>
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
+
+  <!-- SPELLS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+  <script src="app.js"></script>
+  
+  <link rel="stylesheet" href="style/nu-swe.css">
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+    <div class="sidebar clear">
+      <div class="sidebar__profile">
+        <img src="http://swe.mccormick.northwestern.edu/images/McC_Gray.png"  alt="McCormick logo">
+          <br> <br>
+        <a href="/">
+          <img src="http://orgs.tntech.edu/swe/images/gears/SWEGear_grayscale_small.png" alt="SWE Gear logo" class="sidebar__profile-img">
+        </a>
+        <h3 class="sidebar__profile-name">
+          Society of Women Engineers<br>Northwestern University
+        </h3>
+        <div class="bio sidebar__profile-bio clear">
+          <p>
+            <!--
+            Lead front-end <a href="//twitter.com/appsbroker">@appsbroker</a>. <br>
+            Developer Expert <a href="//twitter.com/google">@google</a>. 
+            
+            <br><br>-->
+            
+            
+            The Society of Women Engineers (SWE) 
+            <br> is a nationally recognized
+            professional, educational, <br> non-profit,
+            and service organization dedicated to
+            promoting interest in and encouraging women to <br>
+            pursue the fields of science and engineering.
+          </p>
+        </div>
+        
+        <nav class="sidebar__profile-nav">
+          <ul>
+            <li> <a href="#"> Home </a> </li>
+            <li> <a href="#events"> Events </a> </li>
+            <li> <a href="#exec"> <!--Executive<br-->Exec Board </a> </li>
+            <li> <a href="#bylaws"> By-Laws </a> </li>
+            <li> <a> Media </a> </li>
+          </ul>
+        </nav><!-- /sidebar__profile-nav -->
+            
+        <br>
+
+      </div><!-- /sidebar__profile -->
+    </div><!-- /sidebar clear -->
+
+
+
+  <div id="main" class="main" role="main">
+  
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    <div ng-view></div>
+    
+  </div><!-- /#main -->
+
+
+
+
+  <footer class="text-center">
+    <p>View the tutorial on <a href="http://scotch.io/tutorials/javascript/single-page-apps-with-angularjs-routing-and-templating">Scotch.io</a></p>
+    <p>View a tutorial on <a href="http://scotch.io/tutorials/javascript/animating-angularjs-apps-ngview">Animating Your Angular Single Page App</a></p>
+  </footer>
+  
+      <div class="main" role="main">
+        <div class="posts">
+          <ul class="posts__list">
+            <li>
+              <a href="/methods-to-determine-if-an-object-has-a-given-property">
+                <h2 class="posts__title">Methods to determine if an Object has a given property</h2>
+                <span class="posts__date">June 30, 2014</span>
+              </a>
+            </li>
+          </ul>       
+        </div><!-- /posts -->
+    </div><!--/main -->
+</body>
+
+</html>
+
