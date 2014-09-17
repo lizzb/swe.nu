@@ -1,28 +1,197 @@
-.description { }
+/*
+Inspired by 
+http://purecss.io/layouts/blog/
+and
+http://toddmotto.com - Todd Motto Jeckyll build
+*/
 
-.contact { }
 
-.awards {
-  text-align: center;
+
+/* ------------------------------------------------------------------
+ *
+ * Overall page
+ *
+ */
+
+*{
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
 }
 
+html {font-size:62.5%;}
 
-.footer{text-align:center;background:#f8f8f8;padding:25px 0}
-.footer__text{text-align:center}
+body {
+  /* font-family: "proxima-nova", sans-serif;*/
+  font:400 15px/1.5 'Helvetica Neue', Helvetica, Arial;
+  background:#fff;
+  color:#444
+}
+
+a {
+  color:#444;
+  font-weight:900;
+  text-decoration:none;
+}
+
+img {
+  vertical-align:bottom;
+  -ms-interpolation-mode:bicubic;
+  max-width:100%;
+}
+
+ul,ol {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+h1,h2,h3,h4,h5{
+  letter-spacing:-1px;
+  margin:0;
+  padding:0;
+}
+h1{letter-spacing:-2px}
+
+
+/* ------------------------------------------------------------------
+ *
+ * Sidebar / Header
+ *
+ */
+
+.sidebar{
+  position:fixed;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  text-align:center;
+  background:#f5f6f5;
+  height:100%;
+  width:360px; /* 340 originally */
+}
+
+#sidebar-profile {margin:40px 0;}
+#sidebar-profile a {display:inline-block;}
+#sidebar-profile .main-logo {
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+  border-radius:50%;
+  display:inline-block;
+  width:100px;
+  height:100px;
+}
+
+#sidebar-profile .name {
+  font-size:26px; /* 30px originally with no line height, this looks better*/
+  line-height: 32px;
+  margin:10px 0;
+}
+
+#sidebar-profile .bio {
+  margin:0;
+  margin-bottom:20px;
+}
+
+#sidebar-profile .bio p {
+  font-size:14px;
+  line-height:1.3;
+}
 
 .bio {
   padding-bottom: 20px;
 }
 
+/* pretty sure all a's are bold anyway... */
+#sidebar-profile .bio p a{ font-weight:900; }
 
-/* see: .is-code-full .code*/
+/* not sure if all browsers support nav tag yet... */
+.nav ul li,
+#sidebar-profile nav ul li{
+  font-size:12px;
+  display:inline-block;
+  border-right:1px solid #ccc
+}
+
+.nav ul li:last-child,
+#sidebar-profile nav ul li:last-child{border-right:0;}
+
+.nav ul li a,
+#sidebar-profile nav ul li a{
+  font-weight:900;
+  display:block;
+  padding:2px 8px;
+}
+
+/*#sidebar-profile .social,*/
+
+
+
+/* ------------------------------------------------------------------
+ *
+ * Footer
+ *
+ */
+
+.footer {
+  text-align:center;
+  background:#f8f8f8;
+  padding:25px 0;
+}
+.footer__text {text-align:center}
+
+footer {background-color: #ddd;}
+
+
+/* ------------------------------------------------------------------
+ *
+ * Main content
+ *
+ */
+
+.main{
+  margin:0 0 0 360px;
+  padding: 0 .4em;
+
+  padding:0 35px 15px; /******/
+
+
+margin-left: auto;
+margin-right: auto;
+padding-left: 1em;
+padding-right: 1em;
+max-width: 768px;
+
+max-width:800px;
+}
+
+
+
+/* Specially formatted paragraphs or spans */
+.description { }
+.contact { }
+.awards { text-align: center; }
+
+
+
+
+
+/* see: .is-code-full .code from purecss.io */
 .subtitle-divider, .subhead-bar {
   background: rgb(250, 250, 250);
 
   border: 1px solid #eee;
   border-left-width: 0;
   border-right-width: 0;
-letter-spacing: 1px;
+  letter-spacing: 1px;
   color: #333;
   font-size: 1em;
   line-height: 1.8;
@@ -39,88 +208,49 @@ letter-spacing: 1px;
   color:rgb(250, 250, 250);
 }
 
-/********
-
-h1, h2, h3, h4, h5, h6, p {padding:0 35px 15px}*/
-
-/* light 
-font-family: proxima-nova, sans-serif;
-font-size: 24px;
-font-weight: 300;
-*/
-
-/*
-aside a, aside a:visited { color: rgb(169, 226, 255); }
-a:visited { color: #265778; }
-a { color: #3b8bba; text-decoration: none;
-*/
-
-aside {
-  background: #1f8dd6;
-  padding: 0.3em 1em;
-  border-radius: 3px;
-  color: #fff;
-  display: block;
-  line-height: 1.6;
-  font-family: "proxima-nova", sans-serif;
-}
 
 
-
-
-footer {background-color: #ddd;}
-h3 {
+/* ------------------------------------------------------------------
+ *
+ * Responsive/adaptive styling
+ *
+ */
+/* changes from a sidebar to header when the screen viewport is smaller */
+@media only screen and (max-width: 768px){
   
-  display: block;
+.sidebar{position:static;width:100%}
+  #sidebar-profile {margin:10px 0}
+  #sidebar-profile .name {font-size:26px; line-height: 32px;}
+  #sidebar-profile .bio {display:none}
+  .main{margin:0;} /* undo padding of parent element */
+
 }
+
+
+
+
+
+
+
+
+
+/* where did this come from?
+h3 {
+  display: block;
+}*/
 
 /*
 background-image: linear-gradient(to left, #74bfb7, #2b77a6 140%);
-
 */
 
-*{-webkit-font-smoothing:antialiased;font-smoothing:antialiased;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
-
-html{font-size:62.5%}
 
 
+
+
+/*.main{margin:0 0 0 360px;  padding:0 35px 15px; }*/ /*******/
 
 
 /*
-  .sidebar .clear
-  .sidebar__profile
-  .sidebar__profile-name
-  .sidebar__profile-bio .clear
-  .sidebar__profile-nav
-  */
-
-body{font:400 15px/1.5 'Helvetica Neue', Helvetica, Arial;background:#fff;color:#444}
-
-a{color:#444;font-weight:900;text-decoration:none}
-img{vertical-align:bottom;-ms-interpolation-mode:bicubic;max-width:100%}
-ul,ol{list-style:none;margin:0;padding:0}
-h1,h2,h3,h4,h5{letter-spacing:-1px;margin:0;padding:0}
-h1{letter-spacing:-2px}
-
-.sidebar{position:fixed;top:0px;bottom:0px;left:0px;text-align:center;background:#f5f6f5;height:100%;width:360px}
-
-.sidebar__profile{margin:40px 0}
-.sidebar__profile a{display:inline-block}
-.sidebar__profile-img{-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;display:inline-block;width:100px;height:100px}
-.sidebar__profile-name{font-size:30px;margin:10px 0}
-.sidebar__profile-bio{margin:0}
-.sidebar__profile-bio p{font-size:14px;line-height:1.3;margin:0}
-.sidebar__profile-bio p a{font-weight:900}
-.sidebar__profile-social{margin:20px 0 10px;height:28px}
-.sidebar__profile-nav ul li{font-size:12px;display:inline-block;border-right:1px solid #ccc}
-.sidebar__profile-nav ul li:last-child{border-right:0}
-.sidebar__profile-nav ul li a{font-weight:900;display:block;padding:2px 8px}
-
-
-.main{margin:0 0 0 360px;  padding:0 35px 15px; } /*******/
-
-
-
 .post,.posts{max-width:800px}
 .posts__list li a{display:block;padding:20px 25px}
 .posts__title{font-size:22px;letter-spacing:-1px}
@@ -140,30 +270,196 @@ h1{letter-spacing:-2px}
 .post__meta-edit{position:relative;display:inline-block;background:#f5f6f5;color:#444;padding:2px 8px 2px 25px;border-radius:3px;font-size:12px;font-weight:900}
 .post__meta-edit i{font-size:14px;position:absolute;top:4px;left:7px}
 
+.post ul li,.page ul li{list-style:disc}
+
+@media only screen and (max-width: 900px){
+  .posts__title{font-size:18px}
+  .post,.page{padding:0 15px 15px}
+  }
+
+*/
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+/********
+
+h1, h2, h3, h4, h5, h6, p {padding:0 35px 15px}*/
+
+/* light 
+font-family: proxima-nova, sans-serif;
+font-size: 24px;
+font-weight: 300;
+*/
+
+/*
+aside a, aside a:visited { color: rgb(169, 226, 255); }
+a:visited { color: #265778; }
+a { color: #3b8bba; text-decoration: none;
+
+
+aside {
+  background: #1f8dd6;
+  padding: 0.3em 1em;
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  line-height: 1.6;
+  font-family: "proxima-nova", sans-serif;
+}*/
+
+
+
+
+/* BELOW HERE IS EXTRA FROM THE streamlined-clean-template-copy inside swe-pure */
+
+
+/*----
+.main{
+  margin:0 0 0 360px;
+  padding: 0 .4em;
+
+margin-left: auto;
+margin-right: auto;
+padding-left: 1em;
+padding-right: 1em;
+max-width: 768px;
+
+max-width:800px;
+}
+
+
+
+
+/*.post,.posts{max-width:800px}*//*----
+.posts__list li a{
+  display:block;
+  padding:20px 25px;
+}
+
+/* .posts__title *//*----
+li .post .title{
+  font-size:22px;
+  letter-spacing:-1px;
+}
+
+/* .posts__date 
+li .post  .date*//*----
+.date{
+  border-bottom:1px solid #eee;
+  font-size:12px;
+  padding:0 0 10px;
+}
+
+
+@media only screen and (max-width: 768px){ /* was 900, then 768px... 480 too small */
+  /*----
+.sidebar{position:static;width:100%}
+  #sidebar-profile{margin:10px 0;}
+  #sidebar-profile .name{
+    font-size:26px; /* expanded format used to be size 30, now both 26px*/
+/*----  line-height: 32px; 
+}
+  #sidebar-profile .bio { /*,#sidebar-profile-social,#carbonads-container*/
+/*----    display:none;
+  }
+  .main{margin:0}
+  /* li .post *//*----
+  #main .title {font-size: 18px;}
+  /*.posts__title{font-size:18px}
+  .post,.page{padding:0 15px 15px}*//*----
+}
 
 .footer{text-align:center;background:#f8f8f8;padding:25px 0}
 .footer__text{text-align:center}
 
-.post ul,.page ul{margin:0 0 0 35px}
-.post ul.events,.page ul.events{margin:0}
-.post ul.events li,.page ul.events li{padding:0 0 0 20px;list-style:none;border-bottom:1px solid #eee}
-
-.post ul li,.page ul li{list-style:disc}
 
 
+/* see: .is-code-full .code*/
+/*----
+.subtitle-divider, .subhead-bar {
+  background: rgb(250, 250, 250);
 
+  border: 1px solid #eee;
+  border-left-width: 0;
+  border-right-width: 0;
 
-@media only screen and (max-width: 900px){
-	
-.sidebar{position:static;width:100%}
-  .sidebar__profile{margin:10px 0}
-  .sidebar__profile-name{font-size:26px}
-  .sidebar__profile-bio,.sidebar__profile-social,#carbonads-container{display:none}
-  .main{margin:0;} /* undo padding of parent element */
-  .posts__title{font-size:18px}
-  .post,.page{padding:0 15px 15px}
+  color: #333;
+  font-size: 1em;
+  line-height: 1.8;
+  display: block;
+  text-align: center;
 }
+
+
+
+/* light 
+font-family: proxima-nova, sans-serif;
+font-size: 24px;
+font-weight: 300;
+*/
+
+/*
+aside a, aside a:visited { color: rgb(169, 226, 255); }
+a:visited { color: #265778; }
+a { color: #3b8bba; text-decoration: none;
+*/
+
+/*----
+aside {
+  background: #1f8dd6;
+  padding: 0.3em 1em;
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  line-height: 1.6;
+  font-family: "proxima-nova", sans-serif;
+}
+
+
+/*
+.is-code-full .code {
+margin-left: auto;
+margin-right: auto;
+padding: 1em;
+border: 1px solid #eee;
+border-left-width: 0;
+border-right-width: 0;
+overflow-x: auto;
+font-family: Consolas, 'Liberation Mono', Courier, monospace;
+color: #333;
+background: rgb(250, 250, 250);
+white-space: pre-wrap;
+word-wrap: break-word;
+font-size: 1em;
+margin: 1em 0;
+box-sizing: border-box;
+display: block;
+text-align: center;
+line-height: 1.6;
+}*/
+
+/*
+@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}
+  
+  a,a:visited{text-decoration:underline}
+  a[href]:after{content:" (" attr(href) ")"}
+  abbr[title]:after{content:" (" attr(title) ")"}
+  .ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}
+  pre,blockquote{border:1px solid #999;page-break-inside:avoid}
+  thead{display:table-header-group}tr,img{page-break-inside:avoid}
+  img{max-width:100% !important}
+  
+  @page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
+*/
+

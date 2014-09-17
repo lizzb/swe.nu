@@ -13,7 +13,14 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
 
-  <!-- SPELLS -->
+  <!-- 
+  lizz: (9/17/14) I realize this is an old version of angularJS.
+  Additionally, I realize that angular is probably overkill, and a simpler templating engine could be used.
+  However, I thought the file structure and syntax of angular would be the easiest for upkeep.
+  Furthermore, used a very helpful and straightforward tutorial as a starting point from scotch.io (possibly for future people to reference for maintenance):
+  
+  http://scotch.io/tutorials/javascript/single-page-apps-with-angularjs-routing-and-templating
+  -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
   <script src="app.js"></script>
@@ -25,18 +32,19 @@
 <body ng-controller="mainController">
 
     <div class="sidebar clear">
-      <div class="sidebar__profile">
+      <div id="sidebar-profile">
         <img src="http://swe.mccormick.northwestern.edu/images/McC_Gray.png"  alt="McCormick logo">
           <br> <br>
         <a href="/">
-          <img src="http://orgs.tntech.edu/swe/images/gears/SWEGear_grayscale_small.png" alt="SWE Gear logo" class="sidebar__profile-img">
+          <img src="http://orgs.tntech.edu/swe/images/gears/SWEGear_grayscale_small.png" alt="SWE Gear logo" class="main-logo">
         </a>
-        <h3 class="sidebar__profile-name">
+        <h3 class="name">
           Society of Women Engineers<br>Northwestern University
         </h3>
-        <div class="bio sidebar__profile-bio clear">
+        <div class="bio clear">
           <p>
             <!--
+            aside
             Lead front-end <a href="//twitter.com/appsbroker">@appsbroker</a>. <br>
             Developer Expert <a href="//twitter.com/google">@google</a>. 
             
@@ -52,20 +60,20 @@
           </p>
         </div>
         
-        <nav class="sidebar__profile-nav">
+        <nav class="nav">
           <ul>
             <li> <a href="#"> Home </a> </li>
             <li> <a href="#events"> Events </a> </li>
-            <li> <a href="#exec"> <!--Executive<br-->Exec Board </a> </li>
+            <li> <a href="#exec"> <!--Executive<br--> Exec Board </a> </li>
             <li> <a href="#bylaws"> By-Laws </a> </li>
-            <li> <a> Media </a> </li>
+            <!--li> <a> Media </a> </li-->
           </ul>
-        </nav><!-- /sidebar__profile-nav -->
+        </nav><!-- /nav -->
             
         <br>
 
-      </div><!-- /sidebar__profile -->
-    </div><!-- /sidebar clear -->
+      </div><!-- /#sidebar-profile -->
+    </div><!-- /.sidebar clear -->
 
 
 
@@ -85,7 +93,11 @@
     <p>View a tutorial on <a href="http://scotch.io/tutorials/javascript/animating-angularjs-apps-ngview">Animating Your Angular Single Page App</a></p>
   </footer>
   
-      <div class="main" role="main">
+</body>
+
+</html>
+
+      <!--div class="main" role="main">
         <div class="posts">
           <ul class="posts__list">
             <li>
@@ -95,9 +107,7 @@
               </a>
             </li>
           </ul>       
-        </div><!-- /posts -->
-    </div><!--/main -->
-</body>
+        </div--><!-- /posts -->
+    <!--/div><!--/main -->
 
-</html>
 
