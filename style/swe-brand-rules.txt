@@ -53,7 +53,7 @@ RGB: 116/118/120
 Main Headers 
 Color: PMS: 7447
 CMYK: 76/77/6/18
-RGB: 90/68/122
+RGB: 90/68/122 
 Font: Optima Bold
 Alternate/Online Font: Arial
 Recommended Font Size: 18

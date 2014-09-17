@@ -34,10 +34,14 @@ body {
   color:#444;
 }
 
-/* this is VERY PINK */
+/* darkish purple #675978;  */
+
 ::selection {
-background: #fe57a1;
+background: rgb(153,191,191); /* tealish? */ /* #fe57a1;this is VERY PINK */
+background: rgb(207, 203, 225);
+background: rgb(90,68,122);
 color: #fff;
+/*color: rgb(116,118,120);*/
 text-shadow: none;
 }
 
@@ -63,6 +67,8 @@ h1,h2,h3,h4,h5{
   letter-spacing:-1px;
   margin:0;
   padding:0;
+  color: rgb(90,68,122);
+  color: rgb(104, 90, 155);
 }
 h1{letter-spacing:-2px}
 
@@ -80,6 +86,7 @@ h1{letter-spacing:-2px}
   left:0px;
   text-align:center;
   background:#f5f6f5;
+   /*background: rgb(207, 203, 225); light purple from branding pdf */
   height:100%;
   width:360px; /* 340 originally */
 }
@@ -101,6 +108,8 @@ h1{letter-spacing:-2px}
   font-size:26px; /* 30px originally with no line height, this looks better*/
   line-height: 32px;
   margin:10px 0;
+  color: rgb(77,79,83); /* "cool grey" or something */
+  color: rgb(90,68,122); /* purple */
 }
 
 #sidebar-profile .bio {
@@ -148,11 +157,33 @@ h1{letter-spacing:-2px}
  * actually just at the end of content of a page, so if content is short, "footer" will appear middle of screen
  */
 
+.footer-logo {
+  /*height: 200px;*/
+  margin: -25px 0;
+}
 .footer {
   margin-left: 360px; /* since footer isn't inside main, need margin here too for sidebar */
   text-align:center;
-  background:#f8f8f8;
-  padding:25px 0;
+ /* background:#f8f8f8;
+  background: #9397AC;  swe "blue" that looks like light purple to me... */
+
+  /*background: rgb(116,118,120);   darker grey, one of 3 swe colors */
+
+  /*background-image: linear-gradient(to left, rgb(149, 151,163), rgb(170, 171,182) 140%);*/
+  /*rgb(149, 151,163), rgb(170, 171,182));*/
+   /* background: -webkit-linear-gradient(90deg, gray, lightgrey); */
+  
+
+/*background-image: url('images/SWE_Logo_WithTag_white.png');*/
+
+/* background-color: -webkit-linear-gradient(90deg, rgb(149, 151,163), rgb(170, 171,182));   */
+
+ background: -webkit-linear-gradient(90deg, rgb(149, 151,163), rgb(170, 171,182)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, rgb(149, 151,163), rgb(170, 171,182)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, rgb(149, 151,163), rgb(170, 171,182)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, rgb(149, 151,163), rgb(170, 171,182)); /* Standard syntax (must be last) */
+
+  padding:25px 0; 
 }
 .footer__text {text-align:center}
 
@@ -170,10 +201,10 @@ h1{letter-spacing:-2px}
 
   padding:0 35px 15px; /******/
 
-
+/*
 margin-left: auto;
 margin-right: auto;
-/*padding-left: 1em;
+padding-left: 1em;
 padding-right: 1em;
 max-width: 768px;*/
 
