@@ -156,10 +156,18 @@ h1{letter-spacing:-2px}
  * Footer
  * actually just at the end of content of a page, so if content is short, "footer" will appear middle of screen
  */
+.footer-address {
+font-weight: 900;
+color: #fff;
+text-shadow: 1px 3px 2px rgb(90,68,122);
+/*color: rgb(90,68,122);
+text-shadow: 1px 1px 2px #fff;*/
+font-size: 10pt; /* default is 9 for small tag */
 
+}
 .footer-logo {
   /*height: 200px;*/
-  margin: -25px 0;
+  margin: -15px 0;
 }
 .footer {
   margin-left: 360px; /* since footer isn't inside main, need margin here too for sidebar */
@@ -183,7 +191,7 @@ h1{letter-spacing:-2px}
     background: -moz-linear-gradient(90deg, rgb(149, 151,163), rgb(170, 171,182)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(90deg, rgb(149, 151,163), rgb(170, 171,182)); /* Standard syntax (must be last) */
 
-  padding:25px 0; 
+  padding:15px 0; 
 }
 .footer__text {text-align:center}
 
@@ -212,8 +220,8 @@ max-width:800px;
 
 
 }
-
-
+/* for exec table*/
+td {padding: 10px;}
 
 /* Specially formatted paragraphs or spans */
 .description { }
