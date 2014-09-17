@@ -1,0 +1,174 @@
+<h2>Events</h2>
+
+<p>Each quarter, our section of SWE holds 1 major event, 1-2 general meetings, a few small social events, and outreach events. A few of these events are outlined below.</p>
+
+<h3 class="subtitle-divider">Major Events</h3>
+
+<p>Our major events consist of the following (click on event's title for more information):</p>
+
+
+<h4><a href="#events/step"> STEP Program </a></h4>
+<p class="description">A 3-Day Summer Technology and Engineering Program for 7-9th Grade Girls</p>
+
+<h4><a href="#events/iday"> Industry Day </a></h4>
+<p class="description">Technical career fair</p>
+
+
+<h4><a href="#events/cdfg"> Career Day For Girls</h4> </a>
+<p class="description">Outreach event for middle and high school girls</p>
+
+<h4><a href="#events/banquet"> Spring Banquet </a></h4> 
+<p class="description">A banquet honoring current SWE Members</p>
+
+<br><br>
+
+<h3 class="subtitle-divider">General Meetings</h3>
+<p>Our general meetings are a time when our SWE members can gather for updates on SWE events, participate in some sort of programming, grab some free food, buy SWE t-shirts, and just hang out.</p>
+
+<h3 class="subtitle-divider">Social Events</h3>
+<p>For social events, we often try to organize lunches at the North Campus Einstein's Bagels. Sometimes we also have movie outings and are planning to hold more social events this upcoming fall when we return to school.</p>
+
+<h3 class="subtitle-divider">Outreach Events</h3>
+<p>We participate in various volunteer outreach events within the Northwestern and neighboring communities including Take Your Daughter to Work Day, Girl Scout Badge Activities and Engineering Week.</p>
+
+
+
+<!-- ****************************** -->
+<!--        BANQUET TEMPLATE        -->
+<!-- ****************************** -->
+<script id="events/banquet.html" type="text/ng-template">
+
+<h2>Northwestern SWE Spring Banquet</h2>
+ 
+<h3>Event Details</h3>
+<p>Spring Banquet is normally held in May.
+Please check back later for more information on this year's Spring Banquet.</p>
+
+<p class="contact"> If you have any questions, please contact the
+<a href="#exec/#president">SWE President</a>.</p>
+
+
+<h3>Spring Banquet Past Scholarship Recipients</h3>
+  <p>Congratulations to all our {{lastAwardYear}} award recipients!</p>
+
+<h4>Academic Acheivement</h4>
+{{academic1}} <br>
+{{academic2}} <br>
+{{academic3}} <br>
+{{academic4}} <br>
+{{academic5}} <br>
+
+<br>
+
+<h4>Student of the Year Awards</h4>
+Outstanding Freshman: {{soty_fresh}} <br>
+Outstanding Sophomore: {{soty_soph}} <br>
+Outstanding Junior: {{soty_jr}} <br>
+Outstanding Senior: {{soty_sr}} <br>
+
+<br>
+
+<h4>Abbott Laboratories Outstanding Student Awards</h4>
+{{abbot1}} <br>
+{{abbot2}} <br>
+
+<br>
+
+</script>
+
+
+<!-- ****************************** -->
+<!--          STEP TEMPLATE         -->
+<!-- ****************************** -->
+<script id="events/step.html" type="text/ng-template">
+<h2> Northwestern SWE Summer Technology and Engineering Program (STEP) </h2>
+
+<h3>{{date_step}}</h3>
+ 
+<p>This year's Summer Program will take place on {{date_step}}. The Summer Technology and Engineering Program (STEP) is a free 3-Day non-residential camp for girls going into 7th, 8th, and 9th grades to encourage them to explore careers in the field of engineering. Participants will: </p>
+
+<ul class="gearList">
+<li> Work in teams to complete and present a three day design activity. </li>
+<li> Participate in hand-on activities and classroom lessons. </li>
+<li> Learn about the different engineering disciplines and the career opportunities within each. </li>
+<li> Explore laboratories at Northwestern's Technological Institute. </li>
+<li> Interact in small groups with Northwestern undergraduate engineering students. </li>
+<li> Meet other girls who are also excited about engineering! </li>
+</ul>
+
+<p class="linked-document">Introduction Flyer</p>
+
+<h4> Application Deadline: {{date_stepAppDeadline}} </h4>
+
+<h4>Student Application</h4>
+<p class="linked-document">Download the student application here.</p>
+
+<p class="contact">For more information, please contact our <a href="#exec/#summer-director">Summer Program Director</a>.</p>
+
+</script>
+
+
+
+<!-- ****************************** -->
+<!--          IDAY TEMPLATE         -->
+<!-- ****************************** -->
+<script id="events/iday.html" type="text/ng-template">
+   <h2>Northwestern SWE Industry Day 2014</h2>
+
+<h3> {{date_iday}} </h3>
+
+<p>This year's SWE Industry Day will take place on {{date_iday}}. SWE Industry Day is Northwestern's largest engineering and technology oriented career fair.</p>
+<p class="contact">For more information, please contact our <a href="#exec/co-program-director-b">Program Director</a>.</p>
+
+<h4 class="subtitle-divider">For Students</h4>
+<p>Industry Day will be held in the Hilton Garden Inn.</p>
+
+<p>SWE Industry Day is open to all Northwestern students and alumni.
+Students do not need to pre-register, but a Wildcard is required for entry.
+Please wear business attire.</p>
+
+<p class="linked-document"></p>
+
+<h4 class="subtitle-divider">For Employers</h4>
+<p>Employer registration will open in late June. Please check back for updates.</p>
+  
+</script>
+
+
+
+<!-- ****************************** -->
+<!--          CDFG TEMPLATE         -->
+<!-- ****************************** -->
+<script id="events/cdfg.html" type="text/ng-template">
+
+  <h3>Northwestern University and Society of Women Engineers:</h3>
+<h2>Career Day For Girls<br>Engineering: Design a Better World!</h2>
+
+<h3 class="subtitle-divider">About Career Day for Girls</h3>
+{{date_cdfg}} <br><br>
+
+McCormick School of Engineering and Applied Science <br>
+2145 Sheridan Road, Evanston, IL 60208 <br>
+8:30 am - 3:30 pm<br><br>
+
+<p>The Robert R. McCormick School of Engineering and Applied Science at Northwestern University is pleased to announce
+our 43rd annual Career Day for Girls, scheduled for {{date_cdfg}}.
+The theme of this one-day program is: <strong> {{theme_cdfg}} </strong> This program is designed for female junior high and high school students who have an interest in
+science and mathematics. The program will contain educational and career information about opportunities in engineering and applied science.
+
+Our speakers are women who have engineering degrees and current female engineering students. </p>
+
+<p class="linked-document">
+The schedule for this year's Career Day for Girls can be found here:
+<strong><a target="_blank" href="{{schedule_cdfg_link}}">Schedule</a></strong>
+</p>
+
+
+<h3 class="subtitle-divider">Registration Information</h3>
+<p>Registration is now closed.</p>
+
+<p>If you missed out on registration, please keep the event in mind for next year.
+SWE holds Career Day for Girls annually on the third Saturday in February.</p>
+
+<p class="contact">For More Information: Contact Hannah Beck by email hannahbeck2015@u.northwestern.edu</p>
+</script>

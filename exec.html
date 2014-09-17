@@ -1,0 +1,11 @@
+
+<p>This is the current listing of all the SWE officers. To e-mail any of the officers, just click on their e-mail address and write a short message. If you have a general question, please e-mail the president at NUSWEPresident@gmail.com.
+</p>
+
+<h3>Executive Board</h3>
+<table>
+<!--th>Role</th><th>Name</th><th>eMail</th-->
+<tr ng-repeat="role in executiveBoard">
+  <td>{{role.title}}</td><td>{{role.name}}</td><td><i class="fa fa-envelope-o"></i> {{role.studentEmail}}</td>
+</tr>
+</table>
