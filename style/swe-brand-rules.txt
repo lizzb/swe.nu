@@ -1,0 +1,78 @@
+Use of Logo:
+
+SWE logo may stand alone
+The logo type may NOT stand alone, must be used in conjunction with logor
+Use tagline ("aspire, advance, achieve") if image is larger than 2.5" or 180 pixels, and NOT reversed out in a solid color
+
+The gray version is recommended for use 
+when faxing and in online applications.
+
+
+SWE’s Brand Colors and the Web
+
+http://societyofwomenengineers.swe.org/images/2012-swe-060%20brand%20guidelines%202012-08-13%20da%20v1.pdf
+
+Purple: 
+RGB: 103/89/120 Hex Code: #675978
+
+Blue: 
+RGB: 148/151/173 Hex Code: #9397AC
+
+Teal: 
+RGB: 172/187/191 Hex Code: #ACBBBF
+
+Gray: 
+RGB: 184/179/176 Hex Code: ##B7B3B0
+
+Yellow: 
+RGB: 221/194/80 Hex Code: #DDC251
+
+
+-------
+SWE Brand Color Palette 
+
+Green:
+PMS: 347
+CMYK: 96/0/88/1
+RGB: 0/155/72
+
+
+Yellow:
+PMS: 458
+CMYK: 2/7/58/7
+RGB: 221/205/105
+
+
+Gray:
+PMS: Cool Gray 10
+CMYK: 29/23/16/51
+RGB: 116/118/120
+
+
+
+Main Headers 
+Color: PMS: 7447
+CMYK: 76/77/6/18
+RGB: 90/68/122
+Font: Optima Bold
+Alternate/Online Font: Arial
+Recommended Font Size: 18
+
+Subheads /Subheads
+Color: PMS: 7447
+CMYK: 76/77/6/18
+RGB: 90/68/122
+Font: Optima Bold/
+Helvetica Neue Medium
+Alternate/Online Font: Arial
+Recommended Font Size: 14
+
+Color: PMS: Cool Gray 11
+CMYK: 48/36/24/66
+RGB: 77/79/83
+Font: Optima Regular/
+Helvetica Neue Regular (Use 
+Helvetica Neue in pieces with 
+large amounts of copy.)
+Alternate/Online Font: Arial
+Recommended Font Size: 11

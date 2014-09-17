@@ -31,7 +31,14 @@ body {
   /* font-family: "proxima-nova", sans-serif;*/
   font:400 15px/1.5 'Helvetica Neue', Helvetica, Arial;
   background:#fff;
-  color:#444
+  color:#444;
+}
+
+/* this is VERY PINK */
+::selection {
+background: #fe57a1;
+color: #fff;
+text-shadow: none;
 }
 
 a {
@@ -138,18 +145,18 @@ h1{letter-spacing:-2px}
 /* ------------------------------------------------------------------
  *
  * Footer
- *
+ * actually just at the end of content of a page, so if content is short, "footer" will appear middle of screen
  */
 
 .footer {
+  margin-left: 360px; /* since footer isn't inside main, need margin here too for sidebar */
   text-align:center;
   background:#f8f8f8;
   padding:25px 0;
 }
 .footer__text {text-align:center}
 
-footer {background-color: #ddd;}
-
+/*footer {background-color: #ddd;}*/
 
 /* ------------------------------------------------------------------
  *
@@ -166,11 +173,13 @@ footer {background-color: #ddd;}
 
 margin-left: auto;
 margin-right: auto;
-padding-left: 1em;
+/*padding-left: 1em;
 padding-right: 1em;
-max-width: 768px;
+max-width: 768px;*/
 
 max-width:800px;
+
+
 }
 
 
@@ -179,9 +188,6 @@ max-width:800px;
 .description { }
 .contact { }
 .awards { text-align: center; }
-
-
-
 
 
 /* see: .is-code-full .code from purecss.io */
@@ -205,7 +211,7 @@ max-width:800px;
 .dark {
   background: #333;
   border: 1px solid #eee;
-  color:rgb(250, 250, 250);
+  color: #fff; /*rgb(250, 250, 250);*/
 }
 
 
@@ -218,11 +224,12 @@ max-width:800px;
 /* changes from a sidebar to header when the screen viewport is smaller */
 @media only screen and (max-width: 768px){
   
-.sidebar{position:static;width:100%}
-  #sidebar-profile {margin:10px 0}
+.sidebar{position:static;width:100%;} /* adding top made it not full width */
+  #sidebar-profile {margin:0; padding-top: 10px;} /* fill to top */
   #sidebar-profile .name {font-size:26px; line-height: 32px;}
   #sidebar-profile .bio {display:none}
   .main{margin:0;} /* undo padding of parent element */
+  footer, .footer {margin-left: 0;}
 
 }
 
@@ -370,8 +377,7 @@ li .post  .date*//*----
     font-size:26px; /* expanded format used to be size 30, now both 26px*/
 /*----  line-height: 32px; 
 }
-  #sidebar-profile .bio { /*,#sidebar-profile-social,#carbonads-container*/
-/*----    display:none;
+
   }
   .main{margin:0}
   /* li .post *//*----
@@ -380,26 +386,11 @@ li .post  .date*//*----
   .post,.page{padding:0 15px 15px}*//*----
 }
 
-.footer{text-align:center;background:#f8f8f8;padding:25px 0}
-.footer__text{text-align:center}
 
 
 
-/* see: .is-code-full .code*/
-/*----
-.subtitle-divider, .subhead-bar {
-  background: rgb(250, 250, 250);
 
-  border: 1px solid #eee;
-  border-left-width: 0;
-  border-right-width: 0;
 
-  color: #333;
-  font-size: 1em;
-  line-height: 1.8;
-  display: block;
-  text-align: center;
-}
 
 
 
