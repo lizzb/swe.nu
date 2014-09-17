@@ -6,9 +6,9 @@
 <table>
 <!--th>Role</th><th>Name</th><th>eMail</th-->
 <tr ng-repeat="role in executiveBoard">
-  <td>{{role.title}}</td>
-  <td>{{role.name}} &nbsp; <a href="mailto:{{role.studentEmail}}?Subject=[NU%20SWE]" target="_top"><i class="el-icon-envelope-alt"></i></a></td>
+  <td class="execTitle">{{role.title}}</td>
+  <td class="execName">{{role.name}} &nbsp; <a href="mailto:{{role.studentEmail}}?Subject=[NU%20SWE]" target="_top"><i class="el-icon-envelope-alt"></i></a></td>
   
-  <td>{{role.genericEmail}}</td>
+  <td class="execEmail">{{role.genericEmail}}</td>
 </tr>
 </table>
